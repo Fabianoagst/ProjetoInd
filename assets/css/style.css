@@ -1,0 +1,125 @@
+/*Geral*/
+body{
+    font-family: "Lato"; 
+    src: url("..\assets\fonts\Lato-Regular.ttf");
+
+}
+.titulo{
+    font-family: "Lato"; 
+    src: url("..\assets\fonts\Lato-Bold.ttf");
+    font: bold ;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*Cabeçalho*/
+.header-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    height: 80px;
+}
+
+.menu nav{
+    display: flex;
+    background-color: #fafce6;
+    border-radius: 5%;
+    justify-content: space-around;
+    height: 40px;
+    width: 350px;
+    margin: 10px;
+}
+.menu nav div{
+
+    border-right: 1px solid black ;
+    justify-content: space-around;
+    text-align: center;
+    
+
+}
+.menu nav div:nth-child(3){
+    border-right: none;
+}
+#cf{
+    display:flex;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+#logo{
+    float:left;
+    margin: 20px;
+}
+
+
+/*Adicionar*/
+.novatransacao{
+    border: 3px solid #979797;
+    float: left;
+    margin: 30px;
+    width:400px;
+    height: 344px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.extrato{
+    float: right;
+    margin: 50  px;
+    height:360px;
+    width: 560px;
+}
+
+.botaoadicionar{
+    color: #ffffff;
+    background-color: #333333;
+    border-radius: 5px;
+    margin:auto;
+    margin-top: 40px;
+    border: 0;
+    width: 370px;
+    height: 32px;
+    justify-content: center;
+    align-items:center;
+}
+.adicionar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+
+}
+.itemadd{
+    width: 370px;
+    height: 32px;
+    color: #979797;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+
+
+/*Extrato*/
+.item{
+    display:flex;
+    border-bottom: 1px solid #979797;
+    justify-content: space-between;
+}
+.total{
+    display:flex;
+    border-top: 1px solid #979797;
+    justify-content: space-between;
+    margin: 3px;
+}
+.nomemercadoria{
+    margin: 10px;
+
+}
+.valormercadoria{
+    margin: 10px;
+
+}
