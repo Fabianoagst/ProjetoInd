@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <div .container>
     <head>
         <link rel="stylesheet" href="assets/css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header class="header-top">
+        <header>
             <div>
                 <img id= "logo" src= "assets/img/logo1.png" height= "40px"/>
                 <div id= cf> Controle Financeiro</div>
@@ -16,73 +16,85 @@
                     x
                 </div>
                 <nav>
-                    <div>Cadastro de transações</div>
-                    <div>Limpar dados</div>
-                    <div>Salvar no servidor</div>
+                    <a href="">Cadastro de transações</a>
+                    <span>|</span>
+                    <a href="">Limpar dados</a>
+                    <span>|</span>
+                    <a href="">Salvar no servidor</a>
                 </nav>
-
             </div>
-
+            
         </header>
-
+        <div class= "container">
+        
         <div>
             <div class= "novatransacao">
-                <div class="titulo">Nova Transação</div>
-                <div>
-                    <div class= "adicionar"> 
-                        <div >Tipo de Transação</div>
-                        <select class= itemadd name= "tipodetransacao" id="tipodetransacao">
-                            <option value="compra">Compra</option>
-                            <option value="venda">Venda</option>
-                        </select>
-                    </div>  
-                    <div class= "adicionar">
-                        <div>Nome da mercadoria</div>
-                        <input class= itemadd type="text" id="mecadoria" name="mercadoria" placeholder="Input">
-                    </div>
-                    <div class= "adicionar"> 
-                        <div>Valor</div>
-                        <input class= itemadd type="input" id="valor" name="valor" placeholder="R$ 0,00">
+                        <div class="titulo">Nova Transação</div>
+                        <div>
+                            <div class= "adicionar"> 
+                                <div >Tipo de Transação</div>
+                                <select class= itemadd name= "tipodetransacao" id="tipodetransacao">
+                                    <option value="compra">Compra</option>
+                                    <option value="venda">Venda</option>
+                                </select>
+                            </div>  
+                            <div class= "adicionar">
+                                <div>Nome da mercadoria</div>
+                                <input class= itemadd type="text" id="mecadoria" name="mercadoria" placeholder="Input">
+                            </div>
+                            <div class= "adicionar"> 
+                                <div>Valor</div>
+                                <input class= itemadd type="input" id="valor" name="valor" placeholder="R$ 0,00">
 
+                            </div>
+                            <div>
+                                <input class= "botaoadicionar" type="submit" value="Adicionar Transação">
+                            </div> 
+                        </div>
                     </div>
-                    <div>
-                        <input class= "botaoadicionar" type="submit" value="Adicionar Transação">
-                    </div> 
                 </div>
-            </div>
-        </div>
 
-        <div>
-        <div class="extrato">
-            <div class= "titulo" >Extrato de Transações</div>
-            <div class= "item">
-                <div class="nomemercadoria">Mercadoria</div>
-                <div class="valormercadoria">Valor</div>
-            </div>
-            <div class= "item">
-                <div class="nomemercadoria">Mercadoria</div>
-                <div class="valormercadoria">R$ 12.999,99</div>
-            </div>
-            <div class= "item">
-                <div class="nomemercadoria">Mercadoria</div>
-                <div class="valormercadoria">R$ 99,99</div>
-            </div>
-            <div class= "item">
-                <div class="nomemercadoria">Mercadoria</div>
-                <div class="valormercadoria">R$ 9,99</div>
-            </div>
-            <div class= "total">
-                <div class="nomemercadoria">Total</div>
-                <div class="valormercadoria">R$ 12.909,99</div>
-            </div>
-        </div>
-
-
-
-
+                <div>
+                <div class="extrato">
+                    <div class= "titulo" >Extrato de Transações</div>
+                    <div class= "tituloitem">
+                        <div >Mercadoria</div>
+                        <div>Valor</div>
+                    </div>
+                    <div class= "item">
+                        <div class="mercadoria">
+                            <div class="sinal">+</div>
+                            <div class="nomemercadoria">Lorem ipsum dolor sit amet consectetur</div>
+                            </div>
+                        <div class="valormercadoria">R$ 12.999,99</div>
+                    </div>
+                    <div class= "item">
+                        <div class="mercadoria">
+                            <div class="sinal">-</div>
+                            <div class="nomemercadoria">Quis nostrud exercitation</div>
+                            </div>
+                        <div class="valormercadoria">R$ 99,99</div>
+                    </div>
+                    <div class= "item">
+                        <div class="mercadoria">
+                        <div class="sinal">+</div>
+                        <div class="nomemercadoria">Lorem ipsum</div>
+                        </div>
+                        <div class="valormercadoria">R$ 9,99</div>
+                    </div>
+                    <div class= "resultado">
+                        <div class=total>
+                            <div class="nomemercadoria">Total</div>
+                            <div class="valormercadoria">R$ 12.909,99</div>
+                        </div>
+                        <div class="lucro">[LUCRO]</div>
+                    </div>
+                </div>
+            </div>    
         </div>
     </body>
-
-
-    </div>
+    <footer>
+        <div class="rodape">
+        </div>
+    </footer>
 </html>
