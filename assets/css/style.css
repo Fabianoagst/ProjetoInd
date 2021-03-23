@@ -1,12 +1,12 @@
-/*----------Desktop----------*/
+/*===============Desktop===============*/
 @media only screen and (min-width: 1100px){
-*{
+    *{
         box-sizing: border-box;
     }
     body{
-    font-family:"Lato";
-    src: url("../fonts/");
-    margin: 0;
+        font-family:"Lato";
+        src: url("../fonts/");
+        margin: 0;
     }
 
     .titulo{
@@ -37,6 +37,7 @@
         max-width: 1100px;
         margin: auto;
     }
+
     .mainmenu{
         display: none;
     }
@@ -48,15 +49,12 @@
         white-space: nowrap;
     }
 
-
     nav{
         display: flex;
         background-color: #ffffff;
         width:100%;
         justify-content:space-around;
         border-radius: 4px;
-        
-        
         
     }
 
@@ -66,8 +64,18 @@
         color: #333333;
         align-items: center;
         padding: 7px;
-        
     }
+    nav span{
+    margin: 0;
+
+    }
+    nav a:hover{
+        background-color: #979797;
+        color:#ffffff;
+        transition: 0.3s;
+        border-radius: 4px;
+    }
+
     .fechar{
         display: none;
     }
@@ -89,7 +97,7 @@
         border: 1px solid #979797;
         border-radius: 4%;
         flex-direction: column;
-        width: 30%;
+        width: 50%;
         padding: 10px;
         margin-right: 30px;
         
@@ -100,8 +108,8 @@
         width: 100%;
         flex-direction: column;
         padding: 10px;
-
     }
+
     .itemadd{
         color: #979797;
         border: 1px solid #979797;
@@ -112,7 +120,6 @@
 
     .tituloadd{
         margin-bottom: 2%;
-
     }
 
     .botaoadicionar{
@@ -128,7 +135,18 @@
         align-items:center;
     }
 
-    /*extrato*/
+    .botaoadicionar:hover{
+        background-color: #979797;
+        transition: 0.3s;
+    }
+
+    input:focus, select:focus { 
+        outline: none;
+        border-color: #979797;
+        
+    }
+
+/*extrato*/
     .extrato{
         width: 70%;
         margin-left: 5px;
@@ -144,6 +162,7 @@
         padding-right: 10px;
         padding-bottom: 5px;
     }
+
     .item{
         display:flex;
         border-bottom: 1px solid #979797;
@@ -151,6 +170,18 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .item:hover{
+        background-color: #979797;
+        color:#ffffff;
+        transition: 0.3s;
+
+    }
+
+    .itemadd{
+        padding-left: 5px;
+    }
+
     .mercadoria{
         display: flex;
         margin: 10px;
@@ -213,8 +244,8 @@
     }
 }
 
-/*----------Tablet Landscape----------*/
-@media only screen and (min-width: 769px) and (max-width:1099px){
+/*===============Tablet Landscape===============*/
+@media only screen and  (width: 1112px){
     *{
         box-sizing: border-box;
     }
@@ -250,7 +281,8 @@
         justify-content: space-between;
         align-items: center;
         max-width: 1100px;
-        margin: auto;
+        margin-left: 2%;
+        margin-right: 3%;   
     }
     .mainmenu{
         display: none;
@@ -269,7 +301,7 @@
         background-color: #ffffff;
         width:100%;
         justify-content:space-around;
-        border-radius: 4px;
+        border-radius: 0px;
         
         
         
@@ -280,9 +312,9 @@
         text-decoration: none;
         color: #333333;
         align-items: center;
-        padding: 7px;
-        
+        padding: 7px;  
     }
+
     .fechar{
         display: none;
     }
@@ -305,8 +337,7 @@
         border-radius: 4%;
         flex-direction: column;
         width: 30vw;
-        padding: 10px;
-        
+        padding: 10px;  
     }
 
     .adicionar{
@@ -314,8 +345,8 @@
         width: 100%;
         flex-direction: column;
         padding: 10px;
-
     }
+
     .itemadd{
         color: #979797;
         border: 1px solid #979797;
@@ -326,7 +357,6 @@
 
     .tituloadd{
         margin-bottom: 2%;
-
     }
 
     .botaoadicionar{
@@ -426,8 +456,8 @@
         bottom: 0%;
     }
 }
-/*=============== Tablet Portrait ======================*/
 
+/*=============== Tablet Portrait ===============*/
 @media only screen and (min-width: 412px) and (max-width:768px){
     *{
         box-sizing: border-box;
@@ -503,12 +533,12 @@
         text-align: right;
         justify-content: flex-end;
         font-size: 20px;
-        
     }
 
     nav span{
         display: none;
     }
+
     .fechar{
         padding-left: 10px;
         padding-top: 10px;
@@ -534,20 +564,38 @@
         flex-direction: column;
         width: 90%;
         padding: 10px;
-        margin-bottom: 7%;
+        margin-bottom: 10%;
+    }
+
+    .novatransacao .titulo{
+        margin-bottom: 30px;
+    }
+
+    .opcaoadd{
+        display: flex;
+        align-items: center;
+    } 
+    
+    #inserirnome{
+        width: 45%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #inserirtipo{
+        width: 25%;
+        margin-left: 5px;
+        margin-right: 5px;
         
     }
-    .opcaoadd{
-        display:flex;
+
+    #inserirvalor{
+        width: 25%;
+        margin-left: 5px;
+        margin-right: 5px;
 
     }
 
-    .adicionar{
-        width: 100%;
-        padding: 0  px;
-        margin-top: 25px;
-
-    }
     .itemadd{
         color: #979797;
         border: 1px solid #979797;
@@ -559,7 +607,7 @@
     
    
     .tituloadd{
-        margin-bottom: 5%;
+        margin-bottom: 5px;
 
     }
 
@@ -664,7 +712,8 @@
         bottom: 0%;
     }
 }
-/*=============== Smartphone ======================*/
+
+/*=============== Smartphone ===============*/
 @media only screen and (max-width:412px){
     *{
         box-sizing: border-box;
@@ -721,14 +770,13 @@
         position: fixed;
         right: 0;
         top: 0;
-        width: 50%;
+        width: 40%;
         height: 100%;
         color:#ffffff;
         background-color: #333333;
         margin: 0;
         padding: 0;
         display: none;
-        
     }
 
     nav a{
@@ -739,17 +787,17 @@
         padding: 20px;
         text-align: right;
         justify-content: flex-end;
-        font-size: 20px;
-        
+        font-size: 16px;
     }
 
     nav span{
         display: none;
     }
+    
     .fechar{
         padding-left: 10px;
         padding-top: 10px;
-        font-size: 40px;
+        font-size: 25px;
     }
 
     /*-------------- Centro --------------- */
@@ -766,7 +814,6 @@
     /*adicionar*/
     .novatransacao{
         display: flex;
-        border-bottom: 1px solid #979797;
         flex-direction: column;
         width: 100%;
         padding: 3px;
@@ -813,8 +860,10 @@
     /*extrato*/
     .extrato{
         width: 95%;
-        margin-top: 5%;
+        margin-top: 1%;
         margin-left: 5px;
+        border-top: 1px solid #979797;
+        padding-top: 10px;
     }
 
     .tituloitem{
