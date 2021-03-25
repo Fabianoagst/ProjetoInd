@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="assets/css/style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Controle Financeiro</title>
     </head>
     <body>
         <div class="headerContainer">
@@ -29,29 +30,29 @@
             </header>
         </div>
         <div class= "container">      
-            <div class= "novatransacao">
+            <FORM class= "novatransacao">
                 <div class="titulo">Nova Transação</div>
                 <div class="opcaoadd">
                     <div class= "adicionar" id="inserirtipo"> 
                         <div class= "tituloadd" >Tipo de Transação</div>
-                        <select class= itemadd name= "tipodetransacao" id="tipodetransacao">
+                        <select class= itemadd name= "tipodetransacao" id="tipodetransacao" required >
                             <option value="compra">Compra</option>
                             <option value="venda">Venda</option>
                         </select>
                     </div>  
                     <div class="adicionar" id="inserirnome">
                         <div class= "tituloadd">Nome da mercadoria</div>
-                        <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input">
+                        <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input" required >
                     </div>
                     <div class="adicionar" id="inserirvalor"> 
                         <div class="tituloadd">Valor</div>
-                        <input class= "itemadd" type="input" id="valor" name="valor" placeholder="R$ 0,00">
+                        <input class= "itemadd" type="number" min="0,01" id="valor" name="valor" placeholder="R$ 0,00" required >
                     </div>
                 </div>
                     <div class="botaoadd">
-                <input class= "botaoadicionar" type="submit" value="Adicionar Transação">
+                        <input class= "botaoadicionar" type="submit" value="Adicionar Transação">
                     </div> 
-            </div>
+                </form>
             <div class="extrato">
                 <div class= "titulo">Extrato de Transações</div>
                 <div class= "tituloitem">

@@ -100,7 +100,6 @@
         width: 50%;
         padding: 10px;
         margin-right: 30px;
-        
     }
 
     .adicionar{
@@ -245,14 +244,15 @@
 }
 
 /*===============Tablet Landscape===============*/
-@media only screen and  (width: 1112px){
+@media only screen and (min-width:769px) and  (max-width: 1112px){
     *{
         box-sizing: border-box;
     }
     body{
-    font-family:"Lato";
-    src: url("../fonts/");
-    margin: 0;
+        font-family:"Lato";
+        src: url("../fonts/");
+        margin: 0;
+        
     }
 
     .titulo{
@@ -267,7 +267,7 @@
         width: 100vw;
         align-items: center;
         justify-content: space-between;
-
+        min-width: 590px;
     }
 
     .identificacao{
@@ -466,6 +466,7 @@
     font-family:"Lato";
     src: url("../fonts/");
     margin: 0;
+    min-width: 590px;
     }
 
     .titulo{
@@ -537,6 +538,13 @@
 
     nav span{
         display: none;
+    }
+
+    nav a:hover{
+        background-color: #979797;
+        color:#000000;
+        transition: 0.3s;
+        border-radius: 4px;
     }
 
     .fechar{
@@ -794,6 +802,13 @@
         display: none;
     }
     
+    nav a:hover{
+        background-color: #979797;
+        color:#000000;
+        transition: 0.3s;
+        border-radius: 4px;
+    }
+
     .fechar{
         padding-left: 10px;
         padding-top: 10px;
