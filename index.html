@@ -3,19 +3,20 @@
     <head>
         <link rel="stylesheet" href="assets/css/style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="assets/JS/javascript.js"></script>
         <title>Controle Financeiro</title>
     </head>
     <body>
+        <!--CABEÇALHO-->
         <div class="headerContainer">
-            <header>
+            <header> 
                 <div class="identificacao">
-                    <img id= "logo" src= "assets/img/logo1.png" height= "40px"/>
-                    <div id= "cf"> Controle Financeiro</div>
-                    <img class="mainmenu" src= "assets/img/hamburguer_icon.svg"/>
+                    <img id="logo" src="assets/img/logo1.png" height="40px"/>
+                    <div id="cf">Controle Financeiro</div>
+                    <img  class="mainmenu" src="assets/img/hamburguer_icon.svg"/>
                 </div>
-               
-                <div class= "menu">
-                    <div class= "fechar" >
+                <div class="menu">
+                    <div class="fechar" >
                         <span>x</span>
                     </div>
                     <nav>
@@ -26,61 +27,63 @@
                         <a href="">Salvar no servidor</a>
                     </nav>
                 </div>
-                
             </header>
         </div>
-        <div class= "container">      
-            <FORM class= "novatransacao">
+        <!--ADICIONAR-->
+        <div class="container">      
+            <form class="novatransacao">
                 <div class="titulo">Nova Transação</div>
                 <div class="opcaoadd">
-                    <div class= "adicionar" id="inserirtipo"> 
-                        <div class= "tituloadd" >Tipo de Transação</div>
-                        <select class= itemadd name= "tipodetransacao" id="tipodetransacao" required >
+                    <label for="tipodetransacao" class="adicionar" id="inserirtipo"> 
+                        <div class="tituloadd" >Tipo de transação</div>
+                        <select class="itemadd" name= "tipodetransacao" id="tipodetransacao" required >
+                            <option value="">Selecione</option>
                             <option value="compra">Compra</option>
                             <option value="venda">Venda</option>
                         </select>
-                    </div>  
-                    <div class="adicionar" id="inserirnome">
-                        <div class= "tituloadd">Nome da mercadoria</div>
+                    </label>  
+                    <label for="mercadoria" class="adicionar" id="inserirnome">
+                        <div class="tituloadd">Nome da mercadoria</div>
                         <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input" required >
-                    </div>
-                    <div class="adicionar" id="inserirvalor"> 
+                    </label>
+                    <label for="valor" class="adicionar" id="inserirvalor"> 
                         <div class="tituloadd">Valor</div>
                         <input class= "itemadd" type="number" min="0,01" id="valor" name="valor" placeholder="R$ 0,00" required >
-                    </div>
+                    </label>
                 </div>
                     <div class="botaoadd">
-                        <input class= "botaoadicionar" type="submit" value="Adicionar Transação">
+                        <input class="botaoadicionar" type="submit" value="Adicionar Transação">
                     </div> 
-                </form>
+            </form>
+            <!--EXTRATO-->
             <div class="extrato">
-                <div class= "titulo">Extrato de Transações</div>
-                <div class= "tituloitem">
+                <div class="titulo">Extrato de Transações</div>
+                <div class="tituloitem">
                     <div>Mercadoria</div>
                     <div>Valor</div>
                 </div>
-                <div class= "item">
+                <div class="item">
                     <div class="mercadoria">
                         <div class="sinal">+</div>
                         <div class="nomemercadoria">Lorem ipsum dolor sit amet consectetur</div>
                     </div>
                     <div class="valormercadoria">R$ 12.999,99</div>
                 </div>
-                <div class= "item">
+                <div class="item">
                     <div class="mercadoria">
                         <div class="sinal">-</div>
                         <div class="nomemercadoria">Quis nostrud exercitation</div>
                     </div>
                     <div class="valormercadoria">R$ 99,99</div>
                 </div>
-                <div class= "item">
+                <div class="item">
                     <div class="mercadoria">
                         <div class="sinal">+</div>
                         <div class="nomemercadoria">Lorem ipsum</div>
                     </div>
                     <div class="valormercadoria">R$ 9,99</div>
                 </div>
-                <div class= "resultado">
+                <div class="resultado">
                     <div class=total>
                         <div class="nomemercadoria">Total</div>
                         <div class="valormercadoria">R$ 12.909,99</div>
