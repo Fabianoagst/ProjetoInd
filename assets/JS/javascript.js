@@ -25,17 +25,13 @@ function trataFormulario(e){
     }
     if (e.target.elements.mercadoria.value == ""){
         e.target.elements.mercadoria.parentElement.querySelector("span").style.display = "block";
-        return false;
+     
     }
-    if (e.target.elements.valor.value == ""){
+    if (e.target.elements.valor.value <= 0){
         e.target.elements.valor.parentElement.querySelector("span").style.display = "block";
-        return false;
+    
     }
 
-    if (e.target.elements.valor.value <= 0){
-        alert("Digite um valor válido!")
-        return false;
-    }
 
     let tipodeTransacao = "-";
 
