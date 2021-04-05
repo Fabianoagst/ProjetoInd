@@ -102,6 +102,12 @@
         margin-right: 30px;
         margin-top: 0;
     }
+    form span{
+        color: red;
+        padding: 0;
+        margin-top: -5px;
+        display: none;
+    }
 
     .adicionar{
         display: flex;
@@ -509,7 +515,7 @@
 
     
     .mainmenu{
-        width: 5%;
+        width: 35px;
     }
 
     #cf{
@@ -529,6 +535,10 @@
         margin: 0;
         padding: 0;
         display: none;
+    }
+
+    .menu.active{
+        display: block;
     }
 
     nav a{
@@ -776,7 +786,7 @@
     }
 
     .mainmenu{
-        width: 5%;
+        width: 35px;
     }
 
     #cf{
@@ -789,13 +799,18 @@
         position: fixed;
         right: 0;
         top: 0;
-        width: 40%;
+        width: 70%;
         height: 100%;
         color:#ffffff;
         background-color: #333333;
         margin: 0;
         padding: 0;
         display: none;
+    }
+
+    .menu.active{
+        display: block;
+        
     }
 
     nav a{
@@ -822,8 +837,9 @@
 
     .fechar{
         padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        padding-top: 5px;
+        margin-bottom: 10px;
+        font-size: 30px;
     }
 
     /*----------Centro----------*/

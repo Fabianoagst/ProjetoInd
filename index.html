@@ -13,7 +13,7 @@
                 <div class="identificacao">
                     <img id="logo" src="assets/img/logo1.png" height="40px"/>
                     <div id="cf">Controle Financeiro</div>
-                    <img  class="mainmenu" src="assets/img/hamburguer_icon.svg"/>
+                    <img id="menubutton" class="mainmenu" src="assets/img/hamburguer_icon.svg"/>
                 </div>
                 <div class="menu">
                     <div class="fechar" >
@@ -31,12 +31,13 @@
         </div>
         <!--ADICIONAR-->
         <div class="container">      
-            <form class="novatransacao">
+            <form id="meuForm" class="novatransacao">
                 <div class="titulo">Nova Transação</div>
                 <div class="opcaoadd">
                     <label for="tipodetransacao" class="adicionar" id="inserirtipo"> 
                         <div class="tituloadd" >Tipo de transação</div>
-                        <select class="itemadd" name= "tipodetransacao" id="tipodetransacao" required >
+                        <span>Selecione um tipo de transação</span>
+                        <select class="itemadd" name= "tipodeTransacao" id="tipodeTransacao">
                             <option value="">Selecione</option>
                             <option value="compra">Compra</option>
                             <option value="venda">Venda</option>
@@ -44,11 +45,13 @@
                     </label>  
                     <label for="mercadoria" class="adicionar" id="inserirnome">
                         <div class="tituloadd">Nome da mercadoria</div>
-                        <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input" required >
+                        <span>Digite o nome da mercadoria</span>
+                        <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input">
                     </label>
                     <label for="valor" class="adicionar" id="inserirvalor"> 
                         <div class="tituloadd">Valor</div>
-                        <input class= "itemadd" type="number" min="0,01" id="valor" name="valor" placeholder="R$ 0,00" required >
+                        <span>Digite um valor válido</span>
+                        <input class= "itemadd" type="number" min="0,01" id="valor" name="valor" placeholder="R$ 0,00">
                     </label>
                 </div>
                     <div class="botaoadd">
@@ -64,7 +67,7 @@
                 </div>
                 <div class="item">
                     <div class="mercadoria">
-                        <div class="sinal">+</div>
+                        <div id="sinal" class="sinal">+</div>
                         <div class="nomemercadoria">Lorem ipsum dolor sit amet consectetur</div>
                     </div>
                     <div class="valormercadoria">R$ 12.999,99</div>
