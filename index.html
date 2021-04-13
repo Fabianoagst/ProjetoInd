@@ -34,10 +34,10 @@
             <form id="meuForm" class="novatransacao">
                 <div class="titulo">Nova Transação</div>
                 <div class="opcaoadd">
-                    <label for="tipodetransacao" class="adicionar" id="inserirtipo"> 
+                    <label for="tipodeTransacao" class="adicionar" id="inserirtipo"> 
                         <div class="tituloadd" >Tipo de transação</div>
                         <span>Selecione um tipo de transação</span>
-                        <select class="itemadd" name= "tipodeTransacao" id="tipodeTransacao">
+                        <select onchange= "clearErros(event)" class="itemadd" name="tipodeTransacao" id="tipodeTransacao">
                             <option value="">Selecione</option>
                             <option value="compra">Compra</option>
                             <option value="venda">Venda</option>
@@ -46,12 +46,12 @@
                     <label for="mercadoria" class="adicionar" id="inserirnome">
                         <div class="tituloadd">Nome da mercadoria</div>
                         <span>Digite o nome da mercadoria</span>
-                        <input class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input">
+                        <input onkeydown="clearErros(event)" class= itemadd type="text" id="mercadoria" name="mercadoria" placeholder="Input">
                     </label>
                     <label for="valor" class="adicionar" id="inserirvalor"> 
                         <div class="tituloadd">Valor</div>
                         <span>Digite um valor válido</span>
-                        <input class= "itemadd" type="number" min="0,01" id="valor" name="valor" placeholder="R$ 0,00">
+                        <input  onkeydown="clearErros(event)" class="itemadd" type="number" id="valor" name="valor" placeholder="R$ 0,00">
                     </label>
                 </div>
                     <div class="botaoadd">
@@ -65,32 +65,17 @@
                     <div>Mercadoria</div>
                     <div>Valor</div>
                 </div>
-                <div class="item">
-                    <div class="mercadoria">
-                        <div id="sinal" class="sinal">+</div>
-                        <div class="nomemercadoria">Lorem ipsum dolor sit amet consectetur</div>
+                <div class="itens">
+                    <div id="item" class="item">
+
                     </div>
-                    <div class="valormercadoria">R$ 12.999,99</div>
                 </div>
-                <div class="item">
-                    <div class="mercadoria">
-                        <div class="sinal">-</div>
-                        <div class="nomemercadoria">Quis nostrud exercitation</div>
-                    </div>
-                    <div class="valormercadoria">R$ 99,99</div>
-                </div>
-                <div class="item">
-                    <div class="mercadoria">
-                        <div class="sinal">+</div>
-                        <div class="nomemercadoria">Lorem ipsum</div>
-                    </div>
-                    <div class="valormercadoria">R$ 9,99</div>
-                </div>
+
                 <div class="resultado">
                     <div class=total>
                         <div class="nomemercadoria">Total</div>
-                        <div class="valormercadoria">R$ 12.909,99</div>
-                    </div>
+                        <div class="valormercadoria" id="valorTotal"></div>
+                    </div> 
                     <div class="lucro">[LUCRO]</div>
                 </div>
             </div>
