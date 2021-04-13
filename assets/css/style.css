@@ -86,9 +86,9 @@
         display: flex;
         max-width: 1100px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 90px;
         justify-content: space-around;
-        align-items: center;
+        align-items: initial;
     }
 
     /*----------Adicionar----------*/
@@ -98,6 +98,7 @@
         border-radius: 4%;
         flex-direction: column;
         width: 50%;
+        height: 370px;
         padding: 10px;
         margin-right: 30px;
         margin-top: 0;
@@ -156,14 +157,13 @@
     input:focus, select:focus { 
         outline: none;
         border-color: #979797;
-        
     }
 
     /*----------Extrato----------*/
     .extrato{
         width: 70%;
         margin-left: 5px;
-
+        
     }
 
     .tituloitem{
@@ -175,6 +175,11 @@
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 5px;
+    }
+
+    .itens{
+        max-height: 300px;
+        overflow-y: scroll;
     }
 
     .item{

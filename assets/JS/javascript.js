@@ -103,6 +103,17 @@ function removeItem(evt, index){
     reescreveLista()
 }
 
+function limparDados(){
+    // produtos.splice(0,produtos.length)
+    // localStorage.setItem("produtos", JSON.stringify(produtos))
+    // reescreveLista()
+    localStorage.clear()     
+    console.log("funcionou")
+}
+
+
+
+
 
 // //--------------------VALIDAÇÃO CAMPO VALOR-----------------------
 // function applyMask(evt) {
