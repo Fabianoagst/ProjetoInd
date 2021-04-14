@@ -87,7 +87,6 @@ function reescreveLista(){
         document.querySelector(".lucro").innerHTML = "[LUCRO]" 
     }else{
         document.querySelector(".lucro").innerHTML = ""
-
     }
     if (produtos.length==0){
     document.querySelector(".itens").innerHTML =`

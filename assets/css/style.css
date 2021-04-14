@@ -103,6 +103,7 @@
         margin-right: 30px;
         margin-top: 0;
     }
+
     form span{
         color: red;
         padding: 0;
@@ -163,7 +164,6 @@
     .extrato{
         width: 70%;
         margin-left: 5px;
-        
     }
 
     .tituloitem{
