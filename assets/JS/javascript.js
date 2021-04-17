@@ -143,3 +143,77 @@ function applyMask(evt) {
         }
     }
 }
+
+var aluno = "1127"
+
+function salvarDados(){ 
+    fetch("https://api.airtable.com/v0/appRNtYLglpPhv2QD/Historico", {
+        headers: {    
+            Authorization: "Bearer key2CwkHb0CKumjuM"
+        }
+    })
+    .then(response => response.json())
+    .then (responseJson => {
+        existe = responseJson.records.filter((record) => {
+            if(aluno == record.fields.Aluno){
+                return true
+            }
+            return false
+        })
+        if(existe.length == 0){
+            insereDados()
+        }else{
+            alteraDados(existe[0].id)
+        }
+    })
+}
+
+function insereDados(){
+    var json = JSON.stringify(produtos)
+    var body = JSON.stringify({
+        "records": [
+            {
+              "fields":{
+                    "Aluno": aluno,
+                    "Json": json
+              }
+            }
+        ]
+    })
+
+    fetch("https://api.airtable.com/v0/appRNtYLglpPhv2QD/Historico", {
+        method: "POST",
+        headers: {
+            Authorization: "Bearer key2CwkHb0CKumjuM",
+            "Content-Type": "application/json"
+        },
+        body:body
+    })
+}
+
+function alteraDados(id){
+    var json = JSON.stringify(produtos)
+
+    var body = JSON.stringify({
+        "records": [
+            {
+            "id": id,
+            "fields": {
+                "Aluno": aluno,
+                "Json": json
+            }
+        }
+        ]
+    })
+
+    fetch("https://api.airtable.com/v0/appRNtYLglpPhv2QD/Historico", {
+        method: "PATCH",
+        headers: {
+            Authorization:"Bearer key2CwkHb0CKumjuM",
+            "Content-Type": "application/json"
+        },
+        body:body
+    })
+
+    
+}
